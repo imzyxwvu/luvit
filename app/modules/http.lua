@@ -22,6 +22,9 @@ local Readable = require('stream').Readable
 local Writable = require('stream').Writable
 local date = require('os').date
 
+exports.name = "creationix/luvit/http"
+exports.version = "0.0.1"
+
 local IncomingMessage = Readable:extend()
 exports.IncomingMessage = IncomingMessage
 

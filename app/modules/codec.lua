@@ -17,6 +17,9 @@ limitations under the License.
 --]]
 local uv = require('uv')
 
+exports.name = "creationix/luvit/codec"
+exports.version = "0.0.1"
+
 function exports.wrapEmitter(emitter)
   local read, write
   local queue = {}

@@ -19,12 +19,15 @@ limitations under the License.
 local Object = require('core').Object
 local ffi = require('ffi')
 
+exports.name = "creationix/luvit/buffer"
+exports.version = "0.0.1"
+
 ffi.cdef([[
   void *malloc (size_t __size);
   void free (void *__ptr);
 ]])
 
-local buffer = {}
+local buffer = exports
 
 local Buffer = Object:extend()
 buffer.Buffer = Buffer

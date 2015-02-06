@@ -18,6 +18,9 @@ limitations under the License.
 local utils = require('utils')
 local uv = require('uv')
 
+exports.name = "creationix/luvit-globals"
+exports.version = "0.0.1"
+
 local function init()
   -- Make print go through libuv for windows colors
   _G.print = utils.print

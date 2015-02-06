@@ -19,6 +19,9 @@ limitations under the License.
 -- Derived from Yichun Zhang (agentzh)
 -- https://github.com/openresty/lua-resty-dns/blob/master/lib/resty/dns/resolver.lua
 
+exports.name = "creationix/luvit/dns"
+exports.version = "0.0.1"
+
 local dgram = require('dgram')
 local fs = require('fs')
 local net = require('net')

@@ -19,6 +19,9 @@ local uv = require('uv')
 local Object = require('core').Object
 local bind = require('utils').bind
 
+exports.name = "creationix/luvit-timer"
+exports.version = "0.0.1"
+
 -------------------------------------------------------------------------------
 
 local Timer = Object:extend()

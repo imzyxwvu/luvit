@@ -17,10 +17,13 @@ limitations under the License.
 --]]
 
 local los = require('los')
-local path_base = require('path_base')
+local path_base = require('./path_base')
+
+exports.name = "creationix/luvit/path"
+exports.version = "0.0.2"
 
 local function setup_meta(ospath)
-  local path = {}
+  local path = exports
   path._internal = ospath 
   setmetatable(path, {__index = function(table, key)
     if type(path._internal[key]) == 'function' then

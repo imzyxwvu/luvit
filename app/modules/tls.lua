@@ -22,6 +22,9 @@ if not loaded then return end
 local _common_tls = require('_common_tls')
 local net = require('net')
 
+exports.name = "creationix/luvit/tls"
+exports.version = "0.0.1"
+
 local DEFAULT_CIPHERS = _common_tls.DEFAULT_CIPHERS
 
 local extend = function(...)

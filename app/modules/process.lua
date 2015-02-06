@@ -16,6 +16,9 @@ limitations under the License.
 
 --]]
 
+exports.name = "creationix/luvit-process"
+exports.version = "0.0.1"
+
 local uv = require('uv')
 local env = require('env')
 local timer = require('timer')

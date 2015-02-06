@@ -20,7 +20,10 @@ limitations under the License.
 This module is for various classes and utilities that don't need their own
 module.
 ]]
-local core = {}
+local core = exports
+
+exports.name = "creationix/luvit-core"
+exports.version = "0.0.1"
 
 --[[
 Returns whether obj is instance of class or not.
@@ -316,5 +319,4 @@ end
 
 --------------------------------------------------------------------------------
 
-return core
 

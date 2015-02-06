@@ -16,6 +16,9 @@ limitations under the License.
 
 --]]
 
+exports.name = "creationix/luvit-stream"
+exports.version = "0.0.1"
+
 exports.Stream = require('./stream_core').Stream
 exports.Writable = require('./stream_writable').Writable
 exports.Transform = require('./stream_transform').Transform

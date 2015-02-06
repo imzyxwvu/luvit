@@ -19,6 +19,9 @@ limitations under the License.
 local tls = require('tls')
 local http = require('http')
 
+exports.name = "creationix/luvit/https"
+exports.version = "0.0.1"
+
 function exports.createServer(options, onRequest)
   return tls.createServer(options, function (socket)
     return http.handleConnection(socket, onRequest)

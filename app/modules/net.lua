@@ -22,6 +22,9 @@ local utils = require('utils')
 local Emitter = require('core').Emitter
 local Duplex = require('stream').Duplex
 
+exports.name = "creationix/luvit/net"
+exports.version = "0.0.1"
+
 --[[ Socket ]]--
 
 local Socket = Duplex:extend()
